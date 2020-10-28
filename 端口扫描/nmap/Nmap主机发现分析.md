@@ -305,6 +305,18 @@ batchfull:
 
 **其他扫描方式**
 
+默认情况下，nmap会发送四种数据包探测目标主机是否在线：
+
+* ICMP echo request
+
+* aTCP SYN packet to port 443
+
+* aTCP ACK packet to port 80
+
+* an ICMP timestamp request
+
+只要收到任何探测包回复，就证明目标主机在线。
+
 ```c
 else if (!arpping_done) {///探测方式3：其他情况，则采用massping方式探测主机是否在线
     massping(hs->hostbatch, hs->current_batch_sz, ports);
