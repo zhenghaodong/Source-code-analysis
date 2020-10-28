@@ -4,29 +4,25 @@
 
 <details>
   <summary>Nmap主要功能</summary>
-  <pre><code> 
   * 主机发现
   * 服务器版本探测
   * 操作系统探测
   * 网络追踪
   * Nmap脚本引擎
-</pre></code> 
 </details>
 
 <details>
   <summary>Nmap文件类型</summary>
-  <pre><code> 
   * 源码(.cc，.lua文件等)
   * 数据库文件(nmap-os-db，nmap-service-probes等)
   * 编译时的基本文件(Makefile，config等)
   * 注释、提示文件(README-WIN32等)
-</pre></code> 
 </details>
 
 
 <details>
   <summary>Nmap目录结构</summary>
-  <pre><code>
+```	
    Nmap/
     ├─docs（Nmap相关文档，包括License、usage说明及XMLschema文件等）
     │  ├─licenses   
@@ -89,7 +85,8 @@
        ├─test
        ├─zenmapCore
        └─zenmapGUI
-  </code></pre>
+```
+
 </details>
 
 ## 执行流程
